@@ -42,7 +42,7 @@ def build_device(address: str, name: str):
     if match[1] == 'EB3A':
         return EB3A(address, match[2])
     if match[1] == 'EP2000':
-        return EB3A(address, match[2])
+        return EP2000(address, match[2])
 
 
 async def check_addresses(addresses: Set[str]):
